@@ -19,6 +19,7 @@ namespace Hotellerie_GDG1.Models.HotellerieModel
         
         public string SiteWeb { get; set; }
         public string Tel {  get; set; }
+        public virtual ICollection<Appreciation>? Appreciations { get; set;} = new List<Appreciation>();
 
     }
 }
