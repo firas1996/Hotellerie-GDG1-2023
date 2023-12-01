@@ -3,6 +3,7 @@ using Hotellerie_GDG1.Models.HotellerieModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hotellerie_GDG1.Migrations
 {
     [DbContext(typeof(HotellerieDbContext))]
-    partial class HotellerieDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231124103442_AddTel2")]
+    partial class AddTel2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

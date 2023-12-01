@@ -16,7 +16,9 @@ namespace Hotellerie_GDG1.Models.HotellerieModel
         [RegularExpression(@"^(http|https)://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?$",
             ErrorMessage = "The website must be in this format !!")]
         [Display(Name = " Site Web")]
+        
         public string SiteWeb { get; set; }
+        public string Tel {  get; set; }
 
     }
 }
